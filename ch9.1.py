@@ -14,7 +14,7 @@ for l in fhand:
     w = l.split()
     address = w[1]
     count = addresses.get(address, 0) + 1
-    addresses[address] = addresses.get(address, 0) + 1
+    addresses[address] = count
     if(count >= topCount):
       topCount = count
       topName = address
